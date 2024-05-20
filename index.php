@@ -1,3 +1,4 @@
+<!--
 <?php
 session_start(); // Start a session (if not already started)
 
@@ -7,7 +8,7 @@ if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
     exit(); // Terminate script execution
 }
 ?>
-
+-->
 
 <!DOCTYPE html>
 <html>

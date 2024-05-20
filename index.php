@@ -1,0 +1,308 @@
+<?php
+session_start(); // Start a session (if not already started)
+
+// Check if the user is authenticated
+if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
+    header("Location: login.php"); // Redirect to the login page
+    exit(); // Terminate script execution
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Frb23 | Playlist</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IR=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="description" content="playlist" />
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+
+</head>
+
+<body id="page-content">
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label class="logo">ΛV</label>
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="logout.php">Logout</a></li>
+		</ul>
+		<label class="checkbtn" for="check">&#9776;</label>
+	</nav>
+
+	<!-- table starts -->
+
+	<table border="2" cellspacing="0" align="center">
+	
+		<caption>
+			<h1 align="center">Final Revision Batch 23</h1>
+		</caption>
+	
+		<th colspan="2">1st Paper</th>
+		<th colspan="2">2nd Paper</th>
+	
+		<!--Higher Math-->
+	
+		<tr>
+			<th align="center" colspan="4">
+				<h3>Higher Math</h3>
+			</th>
+		</tr>
+	
+		<tr>
+			<th>Chapter</th>
+			<th>Link</th>
+	
+			<th>Chapter</th>
+			<th>Link</th>
+		</tr>
+	
+		<tr>
+			<td>Matrix & Determinant(1)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cba1z8N78n_81Q6w8QCULGt&si=GguzplwKf4cXe03I" target="_blank">Link</a></td>
+	
+			<td>Complex Number(3)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cbvEkAL2vJijIGmuYsPXqGf&si=Miti89Gy3B4ELRHQ" target="_blank">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Straight line(3)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYKgzPyPWSQctrGMDwKGLDf&si=OLJ07gzV5J0mKNSU" target="_blank">Link</a></td>
+	
+			<td>Polynomial(4)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZbYzlYm_QiG9bW-JBVAirl&si=Tc9IRpFfLDioRxlx" target="_blank">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Circle(4)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZ3N-2GT616zPtOVzAA_xHH&si=eevHgLog_I0H38zJ" target="_blank">Link</a></td>
+	
+			<td>Conics(5)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZU7laRMd9maEdmlp6CARRt&si=Jj0wvIUaoHU3KgNb" target="_blank">Link</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>Trigonometry(7)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cbIw-ykE6MXAs11GlZNubYu&si=vQZ4ZEUTicr3-eKs" target="_blank">Link</a></td>
+	
+			<td>Inverse Trigonometry(6)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cbdYYAJB251pFBT_Y3foov2&si=cZj_NiE5ysPNxzT0" target="_blank">Link</a>
+			</td>
+		</tr>
+	
+	
+		<tr>
+			<td>Differentiation(9)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZvtxa6JkJ9AcWGgMPlMYpI&si=M7HMol8tWetkC3Y0" target="_blank">Link</a></td>
+	
+			<td>Statics(8)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYex7W4mRRzhXR6thSzm9pv&si=xEjf_RoS6oXjZicl">Link</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>Integration(10)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYQVkaLWI46y78hY1Ek9UqP&si=rnRrm-_ZGmqqL9Xt" target="_blank">Link</a></td>
+	
+			<td>Dynamics(9)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYT1_YWV0XZjUuZrr_jj9Xq&si=83a6Bc0ulULh_g9R" target="_blank">Link</a></td>
+		</tr>
+	
+		<!--Physics-->
+	
+		<tr>
+			<th align="center" colspan="4">
+				<h3>Physics</h3>
+			</th>
+		</tr>
+	
+		<tr>
+			<td>Vector(2)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cacOOmqTOEMU0tGVULjxXyW&si=Nc3uutv0PpkfNl_O" target="_blank">Link</a>
+			</td>
+	
+			<td>Thermodynamics(1)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3caigJ1tLk1DT2F0jI_LpAGm&si=KhxzOfGaSLkHR2gf" target="_blank">Link</a>
+			</td>
+		</tr>
+	
+	
+		<tr>
+			<td>Newtonian Mechanics(4)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZHTyi5dnfru4LlqHgJp-LY&si=J4NH7FfzwkHPdS3V" target="_blank">Link</a>
+			</td>
+	
+			<td>Static Electricity(2)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Work,Energy & Power(5)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYdKwHyxTF2VrotQ6QdcE5f&si=8sK6YxkKyk9clvcD" target="_blank">Link</a>
+			</td>
+	
+			<td>Current Electricity(3)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Gravitation and Gravity(6)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZD90rDCTyodmz7SVi0yw2m&si=EZGlJ2-yFPSNd80S" target="_blank">Link</a>
+			</td>
+	
+			<td>Physical Optics(7)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Structural Properties(7)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cZHgWvoT-7--1GjhCS2P1oz&si=XbUt3OqcnZ38vskw" target="_blank">Link</a>
+			</td>
+	
+			<td>Modern Physics(8)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Periodic Motion(8)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cbQSP6xzLcwteuRkJHhtCtl&si=Ee8Q_7X8WAXX8D_R" target="_blank">Link</a>
+			</td>
+	
+			<td>Nuclear Physics(9)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Ideal Gas(10)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3casDWxgn6O5DT5dYgI8h6oj&si=x_m8R_BopHWb8CgY" target="_blank">Link</a>
+			</td>
+	
+			<td>Semiconductor(10)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<!--Chemistry-->
+	
+		<tr>
+			<th align="center" colspan="4">
+				<h3>Chemistry</h3>
+			</th>
+		</tr>
+	
+		<tr>
+			<td>Qualitative Chemistry(2)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Enviromental Chemistry(1)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Chemical Bonding(3)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Organic Chemistry(2)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Chemical Change(4)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Quantative Chemistry(3)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Vocational Chemistry(5)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Electro Chemistry(4)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<!--Biology-->
+	
+		<tr>
+			<th align="center" colspan="4">
+				<h3>Biology</h3>
+			</th>
+		</tr>
+	
+		<tr>
+			<td>Cell & it's Structure(1)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Animal Classification(1)</td>
+			<td><a href="https://www.youtube.com/watch?v=5h-w8i9xHWA" target="_blank">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Cell Division(2)</td>
+			<td><a href="https://www.youtube.com/watch?v=A9wCFPwr6OU" target="_blank">Link</a></td>
+	
+			<td>Animal Identity(2)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Micro-Organism(4)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Digestion & Absorption(3)</td>
+			<td><a href="https://www.youtube.com/watch?v=hwc1QkR53KQ" target="_blank">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Gymnosperms & Angiosperms(7)</td>
+			<td><a href="https://www.youtube.com/watch?v=9fWpIZg4AQc" target="_blank">Link</a></td>
+	
+			<td>Blood Circulation(4)</td>
+			<td><a href="https://www.youtube.com/watch?v=CZt2SdyZeOs" target="_blank">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Tissue & Tissue system(8)</td>
+			<td><a href="https://www.youtube.com/watch?v=XfnQlUsj4gw" target="_blank">Link</a></td>
+	
+			<td>Respiration & Breathing(5)</td>
+			<td><a href="https://youtube.com/playlist?list=PLrSbrUgcp3cYwsTaWpkibH3XCUTViVERQ&si=UL-WfGXDIEyRPpLM" target="_blank">Link</a>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>Plant Physiology(9)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Locomotion & Movement(7)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+		<tr>
+			<td>Biotechnology(11)</td>
+			<td><a href="">Link</a></td>
+	
+			<td>Genetics & Evolution(11)</td>
+			<td><a href="">Link</a></td>
+		</tr>
+	
+	</table>
+
+	<!-- table ends -->
+
+	<footer>
+		<p align="center">Copyright &copy;2023 Developed By Sadab</p>
+	</footer>
+	<script src="index.js"></script>
+</body>
+
+</html>
